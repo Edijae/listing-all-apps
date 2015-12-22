@@ -24,6 +24,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -138,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
             this.context = context;
             this.mItem = items;
             packageManager = context.getPackageManager();
+            Collections.sort(mItem,new ResolveInfo.DisplayNameComparator(packageManager));
         }
 
 
