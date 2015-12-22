@@ -1,4 +1,4 @@
-package com.example.crusar.helpinguser;
+package com.example.gikarasojo.helpinguser;
 
 import android.content.Context;
 import android.content.Intent;
